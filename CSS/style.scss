@@ -1,0 +1,15 @@
+@import "variables";
+
+/*Så er der ingen uønsket margin*/
+
+body,
+h1,
+h2,
+p,
+nav ul,
+nav li,
+div ul,
+div li {
+    margin: $marginnone;
+    padding: $marginnone;
+}
