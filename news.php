@@ -39,7 +39,9 @@
                             <h4>Velkommen
                         
                             <?php echo $_SESSION['username']; ?> </h4>
-                            <form><a href="logout.php?logout=true">Log ud</a> </form>
+                            <form>
+                                <button><a href="logout.php?logout=true">Log ud</a></button>
+                            </form>
                         </aside>
                     </section>
                     <?php        
@@ -56,14 +58,49 @@
             </header>
             <!-- Main med artikler og aside -->
             <main>
-                <!-- Min post class med artikler -->
-                <div class="post">
-                    <!-- Her inkludere jeg den php fil som indholder alt hvad der har med selve artiklens udsende at gøre -->
-                    <?php include "fetchDb.php";?>
-                </div>
-                <!-- Aside med sponsorer -->
-                <aside>
-                    <h3>Vores sponsonrer</h3> <img src="IMG/sponsor1.png" alt=""> <img src="IMG/sponsor2.png" alt=""> <img src="IMG/sponsor3.png" alt=""> <img src="IMG/sponsor4.png" alt=""> </aside>
+                <?php 
+                    if(isset($_SESSION ['username']) && !empty($_SESSION['username'])){ ?>
+                    <!-- Min post class med artikler hvis brugeren er logget ind -->
+                    <div class="post">
+                        <!--Min form til at indsætte articles-->
+                        <form action="insert.php" method="get">
+                            <div class="form-group">
+                                <h1>Lav en ny artikel:</h1> </div>
+                            <div class="form-group">
+                                <label for="heading">Artiklens overskrift her:</label>
+                                <br>
+                                <input id="heading" type="text" name="heading" placeholder="Overskrift her..."> </div>
+                            <div class="form-group">
+                                <label for="imgSrc">Billedenavn:</label>
+                                <br>
+                                <input id="imgSrc" type="text" name="imgSrc" placeholder="Sti til billedet uden .png"> </div>
+                            <div class="form-group">
+                                <label for="imgAlt">Beskrivelse af dit billede:</label>
+                                <br>
+                                <input id="imgAlt" type="text" name="imgAlt" placeholder="Tekst der beskriver dit billede"> </div>
+                            <div class="form-group">
+                                <label for="articleText" name="articleText" placeholder="Tekst">Artiklens tekst her:</label>
+                                <br>
+                                <textarea id="articleText" type="text" name="articleText" placeholder="Tekst her..."> </textarea>
+                            </div>
+                            <input type="submit" value="Indsæt ny artikel"> </form>
+                        <!-- Her inkludere jeg den php fil som indholder alt hvad der har med selve artiklens udsende at gøre -->
+                        <?php include "fetchDb.php";?>
+                    </div>
+                    <!-- Aside med sponsorer -->
+                    <aside>
+                        <h3>Vores sponsonrer</h3> <img src="IMG/sponsor1.png" alt=""> <img src="IMG/sponsor2.png" alt=""> <img src="IMG/sponsor3.png" alt=""> <img src="IMG/sponsor4.png" alt=""> </aside>
+                    <?php        
+                    } else{
+                    ?>
+                        <!-- Min post class hvis brugeren ikke er logget ind -->
+                        <div class="post">
+                            <?php include "fetchDb.php";?>
+                        </div>
+                        <!-- Aside med sponsorer -->
+                        <aside>
+                            <h3>Vores sponsonrer</h3> <img src="IMG/sponsor1.png" alt=""> <img src="IMG/sponsor2.png" alt=""> <img src="IMG/sponsor3.png" alt=""> <img src="IMG/sponsor4.png" alt=""> </aside>
+                        <?php } ?>
             </main>
             <!-- Footer -->
             <footer>

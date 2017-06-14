@@ -39,7 +39,9 @@
                             <h4>Velkommen
                         
                             <?php echo $_SESSION['username']; ?> </h4>
-                            <form><a href="logout.php?logout=true">Log ud</a> </form>
+                            <form>
+                                <button><a href="logout.php?logout=true">Log ud</a></button>
+                            </form>
                         </aside>
                     </section>
                     <?php        
@@ -62,37 +64,45 @@
                         <h1>Article 1</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
-                    <article> <img src="IMG/articleImg2.png" alt="Storm Rider">
+                    <div class="document"><i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                        <h2>Dokumenter</h2></div>
+                    <article> <img src="IMG/articleImg2.png" alt="Nintendo 3DS">
                         <h1>Article 2</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
                 </div>
                 <div class="col2">
-                    <article> <img src="IMG/articleImg3.png" alt="Storm Rider">
+                    <article>
+                        <div class="link"><i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                            <h2>Links</h2></div><img src="IMG/articleImg3.png" alt="Like your horse">
                         <h1>Article 3</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
-                    <article> <img src="IMG/articleImg4.png" alt="Storm Rider">
+                    <article> <img src="IMG/articleImg4.png" alt="Pige og hest">
                         <h1>Article 4</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
                 </div>
                 <div class="col3">
-                    <article> <img src="IMG/articleImg5.png" alt="Storm Rider">
+                    <article> <img src="IMG/articleImg5.png" alt="Forsamling">
                         <h1>Article 5</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
-                    <article> <img src="IMG/articleImg6.png" alt="Storm Rider">
+                    <div class="marked"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                        <h2> Marked</h2></div>
+                    <article> <img src="IMG/articleImg6.png" alt="Medlemmer">
                         <h1>Article 6</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
                 </div>
                 <div class="col4">
-                    <article> <img src="IMG/articleImg7.png" alt="Storm Rider">
+                    <div class="events"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                        <h2>Events</h2></div>
+                    <article> <img src="IMG/articleImg7.png" alt="Heste diplom">
                         <h1>Article 7</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
-                    <article> <img src="IMG/articleImg8.png" alt="Storm Rider">
+                    <article> <img src="IMG/articleImg8.png" alt="Opvisning">
                         <h1>Article 8</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita at aspernatur consectetur sint possimus sapiente odio, labore, totam eligendi soluta. Fugiat dolorum corporis quia obcaecati reiciendis. Maiores voluptate laudantium, est.</p>
                     </article>
@@ -113,10 +123,16 @@
                     <p>Lørdag</p>
                     <p>09:00-11:00</p>
                 </div>
-                <div class="afsendere"><img src="IMG/guy.jpg" alt="">
-                    <p>Thomas Karse</p><img src="IMG/guy2.jpg" alt="">
-                    <p>Bjarne Arm</p> <img src="IMG/guy3.jpg" alt="">
-                    <p>Lisbeth Grøn</p>
+                <div class="afsendere">
+                    <div class="thomas"><img src="IMG/guy.jpg" alt="">
+                        <p>Thomas Karse</p>
+                    </div>
+                    <div class="bjarne"><img src="IMG/guy2.jpg" alt="">
+                        <p>Bjarne Arm</p>
+                    </div>
+                    <div class="lisbeth"><img src="IMG/guy3.jpg" alt="">
+                        <p>Lisbeth Grøn</p>
+                    </div>
                 </div>
             </footer>
         </div>

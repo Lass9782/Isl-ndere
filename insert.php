@@ -7,6 +7,7 @@ $imgAlt = $_GET['imgAlt'];
 $articleText = $_GET['articleText'];
 $time = date("Y-m-d");
 $username = $_SESSION['username'];
+
 /*Så kan dataen komme ind i vores database*/
 require_once "connect.php";
 /*Her for de forskellige variabler en værdig som brugeren indtaster på hjemmesiden*/
@@ -20,6 +21,7 @@ $statement->bindParam(5, $articleText);
 $statement->bindParam(6, $username);
 /*Her bliver koden udført når informationerne er indtastet*/
 $statement->execute();
+
 /*Dette gør at vi opdatere forsiden, så vi kan se den nye artikel*/
-header("location: index.php");
+header("location: news.php");
 ?>
