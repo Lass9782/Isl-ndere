@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*Så er der ingen uønsket margin*/
+/* line 5, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+body,
+h1,
+h2,
+p,
+nav ul,
+nav li,
+div ul,
+div li {
+  margin: 0px;
+  padding: 0px; }
+
+/*Min wrapper*/
+/* line 20, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+.wrapper {
+  margin: 0px auto;
+  width: 1366px;
+  max-width: 100%;
+  background-color: #efeae2; }
+
+/* line 27, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+header {
+  background-color: #FFC63C;
+  height: 270px; }
+
+/*Logo class*/
+/* line 35, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 24%;
+  /*Billedet i header*/ }
+  /* line 40, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+  .logo h1 {
+    color: #041B87;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    padding-top: 20px; }
+  /* line 47, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+  .logo .medlem {
+    float: right; }
+    /* line 49, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+    .logo .medlem img {
+      width: 150px; }
+
+/*Min menu*/
+/* line 60, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+.menu nav li {
+  display: inline-block;
+  margin-left: 5.5%; }
+
+/* line 64, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+.menu nav a {
+  color: #041B87;
+  font-family: "Raleway", serif;
+  text-decoration: none; }
+  /* line 68, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+  .menu nav a:active {
+    text-decoration: underline #041B87; }
+
+/*Section med log ind*/
+/* line 78, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+section {
+  float: right;
+  width: 420px;
+  display: flex;
+  flex-wrap: wrap; }
+
+/*Main*/
+/* line 88, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+main {
+  margin: 0px auto;
+  background-color: white;
+  width: 1200px;
+  max-width: 100%;
+  margin-top: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*Post class med artikler*/
+  /*Aside*/ }
+  /* line 98, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+  main .post {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 75%;
+    /*Article*/ }
+    /* line 105, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+    main .post article {
+      border-bottom: 2px dotted black;
+      padding-bottom: 1%;
+      padding-top: 2%; }
+      /* line 109, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+      main .post article h1 {
+        font-family: "Libre Baskerville", serif;
+        color: #041B87; }
+      /* line 113, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+      main .post article p {
+        font-family: "Raleway", serif; }
+  /* line 119, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+  main aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 858px;
+    float: right;
+    padding-right: 2%; }
+    /* line 126, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+    main aside h3 {
+      font-family: "Libre Baskerville", serif;
+      color: #041B87; }
+    /* line 130, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+    main aside img {
+      border: solid #dddddd 1px;
+      margin-top: 5%; }
+
+/*Footer*/
+/* line 140, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+footer {
+  background-color: #FFC63C;
+  margin-top: 10px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 4%; }
+  /* line 149, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+  footer p {
+    color: #041B87;
+    font-family: "Raleway", serif; }
+  /* line 153, C:/xampp/htdocs/Isl-ndere/CSS/news.scss */
+  footer img {
+    width: 40px; }
+
+/*# sourceMappingURL=news.css.map */
